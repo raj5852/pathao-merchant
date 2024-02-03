@@ -1,6 +1,10 @@
 <?php
 
+use App\Http\Controllers\OrderController;
+use App\Http\Controllers\PathaoController;
 use Illuminate\Support\Facades\Route;
+use Xenon\MultiCourier\Courier;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +17,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get('test',[PathaoController::class,'citys']);
+
+Route::get('all-citys',[PathaoController::class,'citys']);
+Route::get('get-zone/{cityid}',[PathaoController::class,'getZone']);
+Route::get('arealists/{zone_id?}',[PathaoController::class,'arealist']);
+
+
+
+Route::get('create-store',[PathaoController::class,'createStore']);

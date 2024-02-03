@@ -18,6 +18,14 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
+    'base_url' => env('PATHAO_BASE_URL', ''),
+    'client_id' => env('PATHAO_CLIENT_ID', ''),
+    'client_secret' => env('PATHAO_CLIENT_SECRET', ''),
+    'client_email' => env('PATHAO_EMAIL', ''),
+    'password' => env('PATHAO_PASSWORD', ''),
+    'grant_type' => env('GTANT_TYPE', ''),
+
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment
