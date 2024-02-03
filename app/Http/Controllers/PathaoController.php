@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Storage;
 
@@ -71,7 +71,6 @@ class PathaoController extends Controller
         // You can then handle the response as needed
         $responseBody = $response->json(); // Convert the response to JSON
 
-        // Example: Output the response body
         return $responseBody;
     }
 
@@ -103,8 +102,8 @@ class PathaoController extends Controller
 
         // Replace with the actual values for the store
         $storeData = [
-            'name' => 'Raj1',
-            'contact_name' => 'Manik2',
+            'name' => 'Raj32',
+            'contact_name' => 'Manik52',
             'contact_number' => '01852211054',
             'secondary_contact' => '',
             'address' => 'Dhaka Dhaka Dhaka DhakaDhaka',

@@ -1,9 +1,7 @@
 <?php
 
-use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PathaoController;
 use Illuminate\Support\Facades\Route;
-use Xenon\MultiCourier\Courier;
 
 
 /*
@@ -17,11 +15,6 @@ use Xenon\MultiCourier\Courier;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-// Route::get('test',[PathaoController::class,'citys']);
 
 Route::get('all-citys',[PathaoController::class,'citys']);
 Route::get('get-zone/{cityid}',[PathaoController::class,'getZone']);
